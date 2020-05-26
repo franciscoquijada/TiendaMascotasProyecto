@@ -1,4 +1,4 @@
-# Proyecto Curso Angular 8 Tienda de mascotas
+# Front Angular 8: Proyecto Curso Angular 8 Tienda de mascotas
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
 
