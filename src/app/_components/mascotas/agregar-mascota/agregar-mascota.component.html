@@ -1,0 +1,26 @@
+<div class='container' id="centerDiv">
+  <mat-card class="tarjeta-principal">
+  <h2>Agregar mascota <mat-icon>pets</mat-icon>
+</h2>
+<form (ngSubmit)="onSubmit()" #formMascota="ngForm">
+  <p>
+    <mat-form-field>
+      <input matInput name="nombre" [(ngModel)]="mascotaModel.nombre" type="text" placeholder="Nombre" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput name="raza" [(ngModel)]="mascotaModel.raza" type="text" placeholder="Raza" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field>
+      <input matInput name="edad" [(ngModel)]="mascotaModel.edad" type="number" placeholder="Edad" required>
+    </mat-form-field>
+  </p>
+  <p>
+    <button type="submit" mat-raised-button color="primary">Guardar</button>
+  </p>
+</form>
+</mat-card>
+</div>

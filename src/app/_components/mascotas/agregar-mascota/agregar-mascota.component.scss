@@ -1,0 +1,36 @@
+input.mat-input-element {
+  color: white !important;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: white !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: white !important;
+  ;
+}
+
+
+.tarjeta-principal {
+  max-width: 400px;
+  margin-top: 4rem;
+}
+
+#centerDiv {
+  margin-top: 4rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  float: none;
+}

@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <img src="/assets/petshop.png" alt="Logo" />
+  <h2>Mi Tienda de mascotas</h2>
+  <ul class="nav">
+    <li>
+      <a class="menu-item"
+        [routerLink]="['mascotas']"
+        routerLinkActive="link-active">
+        <mat-icon>home</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a class="menu-item" (click)="showCredit()">
+        <mat-icon>account_box</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a class="menu-item"
+        (click)="logout()"
+        [routerLink]="['login']"
+        routerLinkActive="link-active">
+        <mat-icon>power_settings_new</mat-icon>
+      </a>
+    </li>
+  </ul>
+</mat-toolbar>

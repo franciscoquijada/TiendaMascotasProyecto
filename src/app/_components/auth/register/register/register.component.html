@@ -1,0 +1,36 @@
+<div class='container'>
+  <form #registerForm="ngForm" (ngSubmit)="onRegister()">
+    <mat-card>
+      <mat-card-title>
+        <mat-icon>person_add</mat-icon>
+        <div>Registrate</div>
+      </mat-card-title>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput [(ngModel)]="name" name="username" pattern="[a-zA-Z0-9]{2,30}" required="required"
+            placeholder="Nombre de Usuario"/>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="email" [(ngModel)]="email" name="email" pattern="^\S+@\S+$" required="required"
+            placeholder="Email" />
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput [(ngModel)]="password" name="password" required="required" pattern=".{6,30}" type="password"
+            placeholder="Password" />
+        </mat-form-field>
+        <div *ngIf="warningMessage">
+          <mat-icon>warning</mat-icon>
+          {{warningMessage}}
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button type="submit" color="primary">
+          <span>Registrar</span>
+        </button>
+      </mat-card-actions>
+      <a class="link text-white" [routerLink]="['/login']" routerLinkActive="link-active">
+        <span>¿Ya tienes una cuenta?</span>
+      </a>
+    </mat-card>
+  </form>
+</div>

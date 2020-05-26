@@ -1,0 +1,52 @@
+mat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+  input,
+  button {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 5px 15px;
+  }
+
+  mat-card-title {
+    font-size: 1.8rem;
+  }
+
+  mat-card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  margin: 74px 10px 10px 10px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: white !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: white !important;
+  ;
+}
